@@ -12,9 +12,14 @@ class ApiController < ApplicationController
   ## Endpoint de /instagram/:tag/buscar
   def instagramTag
 
-    url = "https://api.instagram.com/v1/tags/search?q=" + params[:tag] + "&access_token="  + "791715217.9eb7406.93f8f27f3d2340dba05d86961a8e68cb" 
-    ans = httpGetRequest(url ,nil)
+    tag = params[:tag]
+    token = params[:access_token]
 
+    url = "https://api.instagram.com/v1/tags/search?q=" + tag + "&access_token="  + token
+
+    authHeader = nil
+    data =  httpGetRequest(url , authHeader )
+    resp = JSON.parse(data)
     #cantidad = 2 #getStockSKUDisponible(params[:sku])
     #render :json => { :stock => cantidad,:sku => 8 } #params[:sku] }
   end
