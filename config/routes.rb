@@ -1,8 +1,32 @@
 Rails.application.routes.draw do
   
 
-  root :to => "welcome#index"
-  get "welcome/index"
+=begin
+resources :ocs
+  resources :skus
+  resources :sent_orders
+  resources :grupos
+  resources :precios
+  resources :formulas
+  resources :product_orders
+=end
+
+
+
+  scope '/instagram' do
+    scope '/tag' do
+      scope '/buscar' do
+        get '/' => 'api#instagramTag'
+      end
+    end
+  end
+
+
+
+  #root :to => "welcome#index"
+  root 'welcome#index'
+  #get "welcome/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
