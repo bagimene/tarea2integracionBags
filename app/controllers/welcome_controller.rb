@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  #include ApplicationHelper
+  include ApplicationHelper
   #include
   def index
   	#@popular = Instagram.media_popular
