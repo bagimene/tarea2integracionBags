@@ -15,6 +15,20 @@ end
 
 gem 'instagram', '~> 1.1', '>= 1.1.6'
 
+gem 'json', '~> 1.8', '>= 1.8.3'
+
+gem 'uri-handler', '~> 1.0', '>= 1.0.2'
+
+gem 'rest-open-uri', '~> 1.0'
+
+gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
+
+gem 'net-ssh', '~> 2.9', '>= 2.9.2'
+
+gem 'net-sftp', '~> 2.1', '>= 2.1.2'
+
+gem 'httparty', '~> 0.13.7'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

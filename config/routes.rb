@@ -11,15 +11,17 @@ resources :ocs
   resources :product_orders
 =end
 
-
-
-  scope '/instagram' do
-    scope '/tag' do
-      scope '/buscar' do
-        get '/' => 'api#instagramTag'
+#begin
+    scope '/instagram' do
+      scope '/tag' do
+        scope '/buscar' do
+          post '/' => 'api#instagramTag'
+        end
       end
     end
-  end
+#rescue => e
+#    e.response
+#end
 
 
 

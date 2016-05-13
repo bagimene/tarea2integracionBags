@@ -352,10 +352,16 @@ module ApplicationHelper
 			headers = {'Authorization' => authHeader , 'Content-Type' => 'application/json'}
 		end	
         uri = URI.parse(url)    
-        request = Net::HTTP::Get.new(uri, headers) #{'' => ''})
+        #request = Net::HTTP::Get.new(uri, headers) #{'' => ''})
        	
        	begin 
-       	 	response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(request) } 
+
+       		  http = Net::HTTP.new(uri.host, uri.port)
+			  http.use_ssl = true
+			  http.verify_mode = OpenSSL::SSL::VERIFY_NONE # You should use VERIFY_PEER in production
+			  request = Net::HTTP::Get.new(uri.request_uri)
+			  response = http.request(request)
+       	 	#response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(request) } 
        	
        	rescue Errno::ETIMEDOUT  
        	 	puts "--- Time out de la conexion" 
@@ -365,6 +371,7 @@ module ApplicationHelper
     		return nil
     	end	
   
+
     	return data = response.body
 
 	end
