@@ -27,18 +27,21 @@ class ApiController < ApplicationController
       render :nothing => true, :status => 400 
       return
     end  
-        
-    url = "https://api.instagram.com/v1/tags/" + tag.to_s + "/media/recent?access_token="  + token.to_s
-
-    #url = "https://api.instagram.com/v1/tags/" + tag.to_s + "?access_token="  + token.to_s
-    #totalTags = consultaTags["data"]["media_count"]
-    #metadata = [:total => totalTags] 
+   
+    url = "https://api.instagram.com/v1/tags/" + tag.to_s + "?access_token="  + token.to_s
+    
     #url = "https://api.instagram.com/v1/tags/search?q=" + tag.to_s + "&access_token="  + token.to_s
     data =  httpGetRequest(url , nil )
     consultaTags = JSON.parse(data)
 
-    totalTags = consultaTags["data"].count   #si se quiere el verdadero total, arriba se saca
+    #totalTags = consultaTags["data"].count   #si se quiere el verdadero total, arriba se saca
+    #metadata = [:total => totalTags] 
+    totalTags = consultaTags["data"]["media_count"]
     metadata = [:total => totalTags] 
+
+    url = "https://api.instagram.com/v1/tags/" + tag.to_s + "/media/recent?access_token="  + token.to_s
+    data =  httpGetRequest(url , nil )
+    consultaTags = JSON.parse(data)
 
     posts = Array.new 
 

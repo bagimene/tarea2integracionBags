@@ -5200,3 +5200,10 @@ Processing by ApiController#instagramTag as */*
   Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Can't verify CSRF token authenticity
 Completed 200 OK in 821ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-13 18:41:50 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1973ms (Views: 34.1ms | ActiveRecord: 0.0ms)

@@ -12,7 +12,7 @@ gem 'uri-handler', '~> 1.0', '>= 1.0.2'
 
 #gem 'rest-open-uri', '~> 1.0'
 
-gem 'rf-rest-open-uri'
+#gem 'rf-rest-open-uri'
 
 gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
 
