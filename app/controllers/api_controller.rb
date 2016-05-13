@@ -57,7 +57,7 @@ class ApiController < ApplicationController
         end
       end
       caption = cadaTag["caption"]["text"]
-      cadaPost = [:tags => tagsAsociados,:username => username, :likes => likes, :url => url, :caption => caption]
+      cadaPost = {:tags => tagsAsociados,:username => username, :likes => likes, :url => url, :caption => caption}
       posts.push(cadaPost)  
     end    
 
