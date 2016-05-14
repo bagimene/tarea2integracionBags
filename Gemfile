@@ -22,6 +22,8 @@ gem 'net-sftp', '~> 2.1', '>= 2.1.2'
 
 gem 'httparty', '~> 0.13.7'
 
+gem 'simplecov', '~> 0.7.1', require: false
+
 group :production do
 	gem 'pg'
 end
