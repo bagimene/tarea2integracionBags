@@ -2,7 +2,7 @@ module ApplicationHelper
 
 	
 	def rutaPost
-		return "http://localhost:3000/instagram/tag/buscar"
+		return "https://tareaintegracionbags.herokuapp.com/instagram/tag/buscar"#"http://localhost:3000/instagram/tag/buscar"
 	end
 	def access_token
 		return "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"

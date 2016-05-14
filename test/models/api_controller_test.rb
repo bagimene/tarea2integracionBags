@@ -2,7 +2,7 @@ require 'test_helper'
 include	ApplicationHelper
 
 class ApiControllerTest < ActionController::TestCase
-=begin  
+#=begin  
   #############################
   ##TEST PARA PARÁMETROS CORRECTOS:
   #############################
@@ -102,7 +102,7 @@ class ApiControllerTest < ActionController::TestCase
     	return
     end
   end
-=end
+#=end
 
 
   #############################
