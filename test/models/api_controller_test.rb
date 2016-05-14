@@ -2,7 +2,7 @@ require 'test_helper'
 include	ApplicationHelper
 
 class ApiControllerTest < ActionController::TestCase
-#=begin  
+=begin  
   #############################
   ##TEST PARA PARÁMETROS CORRECTOS:
   #############################
@@ -67,7 +67,7 @@ class ApiControllerTest < ActionController::TestCase
     assert consultaTags["meta"] == "error en parámetros"
   end
 
-#=end
+
   #############################
   ##TEST PARA RESPUESTA DEL JSON:
   #############################
@@ -102,7 +102,7 @@ class ApiControllerTest < ActionController::TestCase
     	return
     end
   end
-
+=end
 
 
   #############################

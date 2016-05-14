@@ -205,6 +205,7 @@ DEPENDENCIES
   net-sftp (~> 2.1, >= 2.1.2)
   net-ssh (~> 2.9, >= 2.9.2)
   pg
+  rack-test
   rails (= 4.2.6)
   rspec (>= 3.2)
   sass-rails (~> 5.0)

@@ -24,7 +24,9 @@ gem 'httparty', '~> 0.13.7'
 
 gem 'simplecov', '~> 0.7.1', require: false
 
-gem 'coveralls', require: false
+gem 'rack-test'
+
+gem 'coveralls', require: false  #gem 'coveralls', '~> 0.8.13'
 
 gem 'rspec', '>= 3.2'
 
