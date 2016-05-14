@@ -30,33 +30,6 @@ module ApplicationHelper
 
 	end
 
-
-
-	def httpPutRequest( url, authHeader ,params)
-		require 'net/http'
-		require 'uri'
-		require 'httparty'
-		
-		if authHeader.nil?
-			headers = {"Content-Type" => "application/json"}
-		else
-			headers = {'Authorization' => authHeader , 'Content-Type' => 'application/json'}
-		end	
-        
-        uri = URI.parse(url)
-        http = Net::HTTP::new(uri.host, uri.port)
-        if params.nil?
-			#response = HTTParty.put(url, :headers => headers)
-		else
-			response = HTTParty.put(url ,
-				:headers =>  headers,
-				:body => params.to_json	
-				)
-		end	
-    	data =  response.body
-    	return data
-	end
-
 	def valid_json?(json)
   		begin
     	JSON.parse(json)
@@ -64,32 +37,6 @@ module ApplicationHelper
   		rescue JSON::ParserError => e
    		return false
   		end
-	end
-
-	def httpDeleteRequest( url, authHeader ,params)
-		
-		require 'net/http'
-		require 'uri'
-		require 'httparty'
-
-		if authHeader.nil?
-		headers = {'Content-Type' => 'application/json'}
-		else
-		headers = {'Authorization' => authHeader , 'Content-Type' => 'application/json'}
-		end	
-		uri = URI.parse(url)
-        http = Net::HTTP::new(uri.host, uri.port)
-        
-        if params.nil?
-		#response = http.delete(uri.path)
-		else
-		response = HTTParty.delete(url ,
-				:headers =>  headers,
-				:body => params.to_json	
-				)	  
-		end	
-    	data = response.body
-
 	end
 
 	def httpGetRequest( url, authHeader)
