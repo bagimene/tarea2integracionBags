@@ -24,6 +24,10 @@ gem 'httparty', '~> 0.13.7'
 
 gem 'simplecov', '~> 0.7.1', require: false
 
+gem 'coveralls', require: false
+
+gem 'rspec', '>= 3.2'
+
 group :production do
 	gem 'pg'
 end
