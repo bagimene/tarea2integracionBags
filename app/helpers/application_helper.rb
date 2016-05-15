@@ -15,13 +15,23 @@ module ApplicationHelper
 			headers = {'Content-Type' => 'application/json'}
 		end	
 
+        #uri = URI.parse(url)
+        #http = Net::HTTP.new(uri.host, uri.port)
+        #http.use_ssl = true
+
         uri = URI.parse(url)
         http = Net::HTTP.new(uri.host, uri.port)
         http.use_ssl = true
+        request = Net::HTTP.post_form(uri, params)
+		#request = Net::HTTP::Post.new(uri.request_uri)
+		#request.set_form_data({"tag" => "snowy", "access_token" => access_token})
+		#response = http.request(request)
+		data = request.body 
+
 
       
-		response = http.post(uri.path, params.to_json, headers)	
-		data = response.body 
+		#response = http.post(uri.path, params.to_json, headers)	
+		#data = response.body 
 	end
 
 	def valid_json?(json)
@@ -146,9 +156,51 @@ module ApplicationHelper
 		data =  httpGetRequest(url , nil)
 		consultaCommits = JSON.parse(data)
 		ultimoCommit = consultaCommits[0]["commit"]["message"]
-		ultimoCaracter = ultimoCommit[-1,1]
-		ultimaVersion = ultimoCaracter.to_i
+		#ultimoCaracter = ultimoCommit[-1,1]
+
+		ultimaVersion = convertirStringInt(ultimoCommit)#ultimoCaracter)
         return ultimaVersion
+    end
+
+    def convertirStringInt(aConvertir)
+		ultimoCaracter = aConvertir[-1,1]
+		if ultimoCaracter != "0" && ultimoCaracter != "1" && ultimoCaracter != "2" && ultimoCaracter != "3" && ultimoCaracter != "4" && ultimoCaracter != "5" && ultimoCaracter != "6" && ultimoCaracter != "7" && ultimoCaracter != "8" && ultimoCaracter != "9"
+    		convertido = -1
+      		return convertido
+      	else
+      		convertido = ultimoCaracter
+      		#ultimoCaracter = aConvertir[-2,1]
+      		if aConvertir.length > 1
+	      		for i in 2..aConvertir.length 
+	      		   ultimoCaracter = aConvertir[-i,1]
+	      		   if ultimoCaracter == "0" || ultimoCaracter == "1" || ultimoCaracter == "2" || ultimoCaracter == "3" || ultimoCaracter == "4" || ultimoCaracter == "5" || ultimoCaracter == "6" || ultimoCaracter == "7" || ultimoCaracter == "8" || ultimoCaracter == "9"
+				   	convertido = ultimoCaracter + convertido
+				   else
+				   	break #si aparece un no número
+				   end
+				end
+			end
+      		
+      		total = convertido.to_i
+    		return total
+    	end	   
+    end
+
+    def tokenDesactualizado(respuestaJson)
+    	begin
+    		if respuestaJson["meta"]["error_type"] != ""
+    			return true
+    		end
+    	rescue => e  
+	      		return false
+	    end
+    end
+
+    def getDaError(numeroError)
+    		if numeroError == 0
+    			return true
+    		end
+	      		return false
     end
 
 end
