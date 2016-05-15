@@ -13,3 +13,10 @@ config/database.yml
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore files to deploy
+/coverage
+coverage/.resultset.json
+db/test.sqlite3
+log/test.log
+vendor/bundle/
