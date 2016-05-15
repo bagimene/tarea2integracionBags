@@ -155,7 +155,13 @@ module ApplicationHelper
 	    url = "https://api.github.com/repos/bagimene/tareaintegracionbags/commits"
 		data =  httpGetRequest(url , nil)
 		consultaCommits = JSON.parse(data)
-		ultimoCommit = consultaCommits[0]["commit"]["message"]
+
+		####COMPROBAR QUE NO SEA NIL ANTES DE LLAMAR LOS []
+		if consultaCommits.nil?
+			return -11
+		else
+			ultimoCommit = consultaCommits[0]["commit"]["message"]
+		end
 		#ultimoCaracter = ultimoCommit[-1,1]
 
 		ultimaVersion = convertirStringInt(ultimoCommit)#ultimoCaracter)

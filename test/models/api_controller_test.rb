@@ -92,6 +92,12 @@ class ApiControllerTest < ActionController::TestCase
     		assert tokenDesactualizado(respuestaJson) == true
     	else 
     		assert tokenDesactualizado(respuestaJson) == false
+
+    		jsonErrorString = {  :meta => { :error_type => "OAuthAccessTokenException", :code => 400,
+			        :error_message => "The access_token provided is invalid."  } }
+			jsonError = jsonErrorString.to_json#JSON.parse(jsonErrorString)  
+    		assert tokenDesactualizado(jsonError) == true
+
     		assert respuestaJson.count == 3, "no tiene la cantidad de elementos requeridos"
 	    	#respuestaJson.each do |elemento|
 	    	#	if elemento 
@@ -100,7 +106,9 @@ class ApiControllerTest < ActionController::TestCase
 	    	assert 1 == respuestaJson["metadata"].count, "metadata debería tener solo un elemento"
 	    	#faltaría ver lo que está dentro de cada post, pero aquí no hay. Es para hacerlo en otro test sólo viendo el formato de un post existente
 	    	assert 0 == respuestaJson["posts"].count, "cantidad de posts mal obtenida"
-	    	assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
+	    	if versionCommit != -11
+	    	  assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
+	    	end
     	end
     else 
     	return
@@ -149,9 +157,18 @@ class ApiControllerTest < ActionController::TestCase
   ##TEST PARA VERSIÓN DEL COMMIT GIT:
   #############################
   test "validar versión master" do	
-    assert_not -1 == versionCommit, "versión no está en número"
-    assert -1 == convertirStringInt("versiónSinNúmero"), "no se puede parsear a int"
-    assert 1 == convertirStringInt("versiónConNúmero1"), "error al convertir"
-    assert 437 == convertirStringInt("versiónConNúmero437"), "error al convertir más de un dígito"
+  	if versionCommit != -11
+	    assert_not -1 == versionCommit, "versión no está en número"
+	    assert -1 == convertirStringInt("versiónSinNúmero"), "no se puede parsear a int"
+	    assert 1 == convertirStringInt("versiónConNúmero1"), "error al convertir"
+	    assert 437 == convertirStringInt("versiónConNúmero437"), "error al convertir más de un dígito"
+	end
+  end
+
+  #############################
+  ##TEST PARA VALIDAR JSON:
+  #############################
+  test "validar json" do	
+    assert valid_json?("asdas") == false, "json no válido"
   end
 end
