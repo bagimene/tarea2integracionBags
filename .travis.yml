@@ -4,4 +4,4 @@ rvm:
 
 
 script:
-  - bundle exec rake test:models
+  - bundle exec rake test test/models/api_controller_test.rb

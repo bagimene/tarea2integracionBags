@@ -5207,3 +5207,3865 @@ Processing by ApiController#instagramTag as */*
   Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Can't verify CSRF token authenticity
 Completed 200 OK in 1973ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:14:34 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"ws.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"ws.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 569ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/api_controller.rb:39:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (125.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:14:49 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "tag": "snowy"
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{
+  "tag": "snowy"
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}'):
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (72.8ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:15:00 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"sd.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"sd.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/api_controller.rb:39:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:15:10 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1429ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:19:55 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 600ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:23:31 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 533ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:24:38 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 540ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:25:00 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 400 Bad Request in 556ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:25:55 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 521ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:26:20 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 400 Bad Request in 550ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:26:43 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.1ms)
+Completed 401 Unauthorized in 539ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:30:05 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 557ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:30:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1407ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:30:55 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 525ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:31:43 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 537ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:32:59 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"1.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 539ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:33:27 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1004ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:34:38 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 848ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (757: unexpected token at '<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 not-logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 not-logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 not-logged-in "> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js not-logged-in "> <!--<![endif]-->
+    <head>
+        
+    <script type="text/javascript">window._timings = {"domLoading": Date.now()}</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+      
+        Instagram
+      
+    </title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+</script>
+<script src="//instagramstatic-a.akamaihd.net/h1/scripts/webfont.js/c0456c81549b.js" type="text/javascript" async></script>
+
+<style type="text/css">
+  /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.woff/618250d25a4d.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.ttf/646346e03084.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.svg/e55a9d6051e8.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.woff/b1cf049474c9.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.ttf/3adb020ceae3.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.svg/29948a2d3c58.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.woff/a9a9773b8e29.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.ttf/99e19808976a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.svg/c33d2fd56309.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.woff/9e306befca91.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.ttf/4a8663684135.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.svg/876278d4b189.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.woff/615c1b06d8fa.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.ttf/2973bd483f7a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.svg/868597833e49.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+</style>
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.woff/66bbe029f180.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.ttf/eb408516399b.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.svg/858f6a9b7ef3.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+</style>
+
+
+        
+    
+        <meta name="robots" content="noimageindex">
+        
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+        
+    
+    
+        <link rel="Shortcut Icon" type="image/x-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.ico/dfa85bb1fd63.ico"><link rel="mask-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.svg/9d8680ab8a3c.svg" color="#262626">
+    
+    
+        <link rel="apple-touch-icon-precomposed" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-72x72-precomposed.png/6f32d3921f7d.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-114x114-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-144x144-precomposed.png/73425f8103e6.png">
+    
+    
+    
+        <style type="text/css">/* @generated */
+/* DO NOT CHANGE THIS FILE. INSTEAD, MODIFY 'distillery/templates/main.css' */
+/* css shared between /about and /developer */
+/* run `build/scripts/css_transform_distillery.sh` if you change this file */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fafafa;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * TODO: The DOM has some extra intermediary wrapper elements. We can remove
+ * some of these once we eliminate the old styles, and simplify our css.
+ */
+.-cx-PRIVATE-Page__root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.-cx-PRIVATE-Page__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.-cx-PRIVATE-Page__main {
+  /**
+   * HACK: Really we just want our child's height to be 100%, but there seems to
+   * be a flexbox bug in Chrome (it seems to work fine in Firefox), so we have
+   * to instead use a nested `display: flex` to force it to the right height.
+   */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-top: 137px;
+  position: relative;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Page__main {
+    display: block;  /* Not needed on mobile and causes strange Safari bug */
+    margin-top: 0;
+  }
+}
+
+/*
+ * Navbar styles
+ */
+
+.-cx-PRIVATE-NavBar__root {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  height: 77px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.-cx-PRIVATE-NavBar__profilePic {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__username {
+  color: #003569;
+  display: inline !important;
+  float: right;
+  font-weight: 400;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signIn {
+  display: inline-block;
+  float: right;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signInText {
+  color: #003569;
+  font-weight: 400;
+}
+
+.-cx-PRIVATE-NavBar__logo {
+  background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup.png/06e4519d6d03.png');
+  background-size: 100%;
+  height: 35px;
+  left: 16px;
+  position: absolute;
+  text-indent: -9999em;
+  top: 6px;
+  width: 176px;
+}
+
+.-cx-PRIVATE-NavBar__logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 1.5dppx) {
+  .-cx-PRIVATE-NavBar__logo {
+    background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup@2x.png/2c2208b30c42.png');
+  }
+}
+
+/**
+ * bluebar_legacy has a logoGroup wrapper, bluebar_new doesn't. This code fixes
+ * things for _legacy.
+ */
+.-cx-PRIVATE-NavBar__logoGroup {
+  left: 16px;
+  position: absolute;
+  top: 6px;
+}
+
+.-cx-PRIVATE-NavBar__logoGroup .-cx-PRIVATE-NavBar__logo {
+  position: static;
+}
+
+.-cx-PRIVATE-NavBar__wrapper {
+  margin: 0 auto;
+  max-width: 1026px;
+  padding: 0px 16px;
+  position: relative;
+}
+
+.-cx-PRIVATE-NavBar__topBarActions {
+  list-style: none;
+}
+
+.-cx-PRIVATE-NavBar__topBarLeft {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__dropdown {
+  display: none;
+}
+
+/*
+ * Sidebar styles
+ */
+
+.-cx-PRIVATE-SidebarLayout__content {
+  border-right: 1px solid #dbdbdb;
+  height: 100%;
+  width: 220px;
+}
+
+.-cx-PRIVATE-SidebarLayout__content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.-cx-PRIVATE-SidebarLayout__content li {
+  list-style: none;
+}
+
+.-cx-PRIVATE-SidebarLayout__content .separator,
+.-cx-PRIVATE-SidebarLayout__content .subtitle {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__content {
+    margin: 0 px;
+    border: none;
+    width: 100%;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content ul {
+    /* once header is clicked, this is set to initial */
+    display: none;
+  }
+
+}
+
+.-cx-PRIVATE-SidebarLayout__root {
+  box-sizing: border-box;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    padding-bottom: 0px;
+    padding-top: 78px;
+    position: static;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__navWrapper,
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0 auto;
+  position: relative;
+  width: 992px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    box-sizing: border-box;
+    display: inline-block;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__nav {
+  float: left;
+  height: 100%;
+  padding-right: 0;
+  pointer-events: initial;
+  width: 256px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__nav {
+    float: none;
+    display: block;
+    margin: 0 !important;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 0 16px 20px 16px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    padding: 0 10px;
+  }
+}
+
+/*
+ * Page content styles
+ *
+ * These style the page content (markdown generated by `render_markdown`)
+ */
+
+.-cx-PRIVATE-SidebarLayout__pageContent {
+  color: #262626;
+  margin-left: 205px;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent > *:first-child {
+  margin-top: 0px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent a {
+  color: #003569;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h3 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li {
+  padding-left: 8px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li:not(:first-child) {
+  margin-top: 8px;
+}
+
+/* in pageContent, pre is generated on the backend */
+.-cx-PRIVATE-SidebarLayout__pageContent pre {
+  white-space: pre-wrap;
+}
+
+/*
+ * Navigation styles
+ */
+
+.-cx-PRIVATE-Navigation__header {
+  color: #999999;
+  font-size: 16px;
+  font-weight: initial;
+  margin: 0;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Navigation__header:first-child {
+    display: block;
+  }
+
+  .-cx-PRIVATE-Navigation__header:not(:first-child) {
+    display: none;
+  }
+
+  .-cx-PRIVATE-Navigation__header i {
+    float: left;
+    width: 22px;
+    height: 18px;
+    margin-right: 8px;
+    margin-left: 10px;
+    background: url("//instagramstatic-a.akamaihd.net/h1/images/glyphs/disclosure-down@2x.png/970bdcaa6ff1.png") no-repeat center;
+    background-size: 14px 14px;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content.active .-cx-PRIVATE-Navigation__header i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.-cx-PRIVATE-Navigation__navLink,
+.-cx-PRIVATE-Navigation__navLink:active,
+.-cx-PRIVATE-Navigation__navLink:visited,
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+  color: #262626;
+  font-size: 16px;
+  display: block;
+  padding: 16px 16px 16px 30px; /* 32px - 2px for the border-left */
+  width: 100%;
+}
+
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left-color: #dbdbdb;
+}
+
+.-cx-PRIVATE-Navigation__active .-cx-PRIVATE-Navigation__navLink {
+  border-left-color: #262626;
+  font-weight: 600;
+}
+
+/*
+ * Footer styles
+ */
+
+.-cx-PRIVATE-Footer__root {
+  font-size: 12px;
+  height: 77px;
+}
+
+.-cx-PRIVATE-Footer__copyright {
+  color: #262626;
+  display: inline-block;
+  float: right;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__nav {
+  display: inline-block;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Footer__copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-Footer__navItems {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.-cx-PRIVATE-Footer__navItems li {
+  display: inline-block;
+  list-style: none;
+}
+
+.-cx-PRIVATE-Footer__navItems li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.-cx-PRIVATE-Footer__navItems a,
+.-cx-PRIVATE-Footer__navItems a:visited,
+.-cx-PRIVATE-Footer__navItems a:hover,
+.-cx-PRIVATE-Footer__navItems a:active,
+.-cx-PRIVATE-Footer__navItems a:focus {
+  color: #003569;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1026px;
+  padding: 0px 20px;
+}
+
+/*
+ * Error styles
+ */
+
+.-cx-PRIVATE-ErrorPage__errorContainer {
+  text-align: center;
+}
+
+@media(max-width: 990px) {
+  .-cx-PRIVATE-ErrorPage__errorContainer {
+    padding: 100px 40px 0 40px;
+  }
+}
+
+.-cx-PRIVATE-ErrorPage__errorContainer a,
+.-cx-PRIVATE-ErrorPage__errorContainer a:visited {
+  color: #003569;
+}
+
+</style>
+    
+
+    
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/jquery.js/213ba890e802.js" type="text/javascript"></script>
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/bluebar.js/57733d51aed5.js" type="text/javascript"></script>
+
+
+    </head>
+    <body class=" p-error dialog-404">
+        
+    
+        <div class="root -cx-PRIVATE-Page__root">
+        
+            <div class="page -cx-PRIVATE-Page__body">
+                
+                    
+                        <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root">
+    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper">
+        <div class="logo -cx-PRIVATE-NavBar__logo"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
+            <div class="top-bar-right account-state" id="top_bar_right">
+                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions">
+                    
+                    
+                    <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn">
+                        <a href="/accounts/login/" class="loginLink">
+                            <i></i>
+                            <strong class="-cx-PRIVATE-NavBar__signInText">Log in</strong>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</header> <!-- .top-bar -->
+                    
+                
+
+                
+                <div class="main -cx-PRIVATE-Page__main">
+                    
+    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer">
+    
+
+    <h2>Sorry, this page isn&#39;t available.</h2>
+
+    <p>
+        The link you followed may be broken, or the page may have been removed.
+        <a href="/">Go back to Instagram.</a>
+    </p>
+
+
+
+    </div>
+
+                </div> <!-- .main -->
+                
+
+            </div> <!-- .page -->
+
+            
+            <footer class="page-footer -cx-PRIVATE-Footer__root" role="contentinfo">
+                <div class="wrapper -cx-PRIVATE-Footer__wrapper">
+                    <nav class="-cx-PRIVATE-Footer__nav">
+                        <ul class="-cx-PRIVATE-Footer__navItems">
+                            <li><a href="/about/us/">About us</a></li>
+                            <li><a href="http://help.instagram.com/">Support</a></li>
+                            <li><a href="http://blog.instagram.com/">Blog</a></li>
+                            <li><a href="http://instagram.com/press/">Press</a></li>
+                            <li><a href="/developer/">API</a></li>
+                            <li><a href="/about/jobs/">Jobs</a></li>
+                            <li><a href="/legal/privacy/">Privacy</a></li>
+                            <li><a href="/legal/terms/">Terms</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="copyright -cx-PRIVATE-Footer__copyright">&copy; 2016 Instagram</p>
+                </div>
+            </footer>
+            
+        
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+    
+    
+
+        
+    <script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-shim.min.js/6514c5e08593.js></script>
+<script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-sham.min.js/fc3c22cf2d67.js></script>
+<script type="text/javascript">window._sharedData = {"country_code":"CL","language_code":"en","gatekeepers":{"sulgin":true},"qs":"{\"shift\":10,\"header\":\"lwhNOt4xUWSQH6iZ0zrUHPsTkkx2PBj9\",\"edges\":100,\"blob\":\"AQBIu2FGBcUeRo3g-H6fx-YxDrH9yth2ot4qVKN7RxDmwD8_tR-Xapt7NG0-nM5m8gxEXZMXqyHkFQSUmrqhDax8qkVejoQtyEe_3NlD89GSo_RPb-1XveaIPZomyfeBgcWqxecrNeemciXRzp9kWSSGCH2Xg_rPSE6TqdG6EPL5MLFkavhSQ92sqam0u0ZhXXznPdqmj8igb-DLDcS4tPH8uqGZhbgot1pe73lWpvy72Q\",\"iterations\":7,\"size\":42}","show_app_install":true,"static_root":"\/\/instagramstatic-a.akamaihd.net\/h1","platform":"web","hostname":"api.instagram.com","entry_data":{},"qe":{"wo":{"p":{"design":"whiteout"},"g":"rollout_20160511"},"su_universe":{"p":{},"g":""},"su":{"p":{"enabled":"true"},"g":"test_20160322"},"discovery":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":360,"pixel_ratio":1.5},"config":{"viewer":null,"csrf_token":"NOTPROVIDED"},"environment_switcher_visible_server_guess":true};</script>
+
+        
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1425767024389221');
+
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+    
+    <script type="text/javascript">window._timings.domInteractive = Date.now()</script>
+
+    </body>
+</html>'):
+  app/controllers/api_controller.rb:35:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:36:09 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:36:55 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1262ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:36:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:38:45 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 3434ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (757: unexpected token at '<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 not-logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 not-logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 not-logged-in "> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js not-logged-in "> <!--<![endif]-->
+    <head>
+        
+    <script type="text/javascript">window._timings = {"domLoading": Date.now()}</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+      
+        Instagram
+      
+    </title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+</script>
+<script src="//instagramstatic-a.akamaihd.net/h1/scripts/webfont.js/c0456c81549b.js" type="text/javascript" async></script>
+
+<style type="text/css">
+  /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.woff/618250d25a4d.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.ttf/646346e03084.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.svg/e55a9d6051e8.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.woff/b1cf049474c9.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.ttf/3adb020ceae3.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.svg/29948a2d3c58.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.woff/a9a9773b8e29.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.ttf/99e19808976a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.svg/c33d2fd56309.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.woff/9e306befca91.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.ttf/4a8663684135.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.svg/876278d4b189.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.woff/615c1b06d8fa.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.ttf/2973bd483f7a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.svg/868597833e49.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+</style>
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.woff/66bbe029f180.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.ttf/eb408516399b.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.svg/858f6a9b7ef3.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+</style>
+
+
+        
+    
+        <meta name="robots" content="noimageindex">
+        
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+        
+    
+    
+        <link rel="Shortcut Icon" type="image/x-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.ico/dfa85bb1fd63.ico"><link rel="mask-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.svg/9d8680ab8a3c.svg" color="#262626">
+    
+    
+        <link rel="apple-touch-icon-precomposed" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-72x72-precomposed.png/6f32d3921f7d.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-114x114-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-144x144-precomposed.png/73425f8103e6.png">
+    
+    
+    
+        <style type="text/css">/* @generated */
+/* DO NOT CHANGE THIS FILE. INSTEAD, MODIFY 'distillery/templates/main.css' */
+/* css shared between /about and /developer */
+/* run `build/scripts/css_transform_distillery.sh` if you change this file */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fafafa;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * TODO: The DOM has some extra intermediary wrapper elements. We can remove
+ * some of these once we eliminate the old styles, and simplify our css.
+ */
+.-cx-PRIVATE-Page__root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.-cx-PRIVATE-Page__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.-cx-PRIVATE-Page__main {
+  /**
+   * HACK: Really we just want our child's height to be 100%, but there seems to
+   * be a flexbox bug in Chrome (it seems to work fine in Firefox), so we have
+   * to instead use a nested `display: flex` to force it to the right height.
+   */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-top: 137px;
+  position: relative;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Page__main {
+    display: block;  /* Not needed on mobile and causes strange Safari bug */
+    margin-top: 0;
+  }
+}
+
+/*
+ * Navbar styles
+ */
+
+.-cx-PRIVATE-NavBar__root {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  height: 77px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.-cx-PRIVATE-NavBar__profilePic {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__username {
+  color: #003569;
+  display: inline !important;
+  float: right;
+  font-weight: 400;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signIn {
+  display: inline-block;
+  float: right;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signInText {
+  color: #003569;
+  font-weight: 400;
+}
+
+.-cx-PRIVATE-NavBar__logo {
+  background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup.png/06e4519d6d03.png');
+  background-size: 100%;
+  height: 35px;
+  left: 16px;
+  position: absolute;
+  text-indent: -9999em;
+  top: 6px;
+  width: 176px;
+}
+
+.-cx-PRIVATE-NavBar__logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 1.5dppx) {
+  .-cx-PRIVATE-NavBar__logo {
+    background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup@2x.png/2c2208b30c42.png');
+  }
+}
+
+/**
+ * bluebar_legacy has a logoGroup wrapper, bluebar_new doesn't. This code fixes
+ * things for _legacy.
+ */
+.-cx-PRIVATE-NavBar__logoGroup {
+  left: 16px;
+  position: absolute;
+  top: 6px;
+}
+
+.-cx-PRIVATE-NavBar__logoGroup .-cx-PRIVATE-NavBar__logo {
+  position: static;
+}
+
+.-cx-PRIVATE-NavBar__wrapper {
+  margin: 0 auto;
+  max-width: 1026px;
+  padding: 0px 16px;
+  position: relative;
+}
+
+.-cx-PRIVATE-NavBar__topBarActions {
+  list-style: none;
+}
+
+.-cx-PRIVATE-NavBar__topBarLeft {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__dropdown {
+  display: none;
+}
+
+/*
+ * Sidebar styles
+ */
+
+.-cx-PRIVATE-SidebarLayout__content {
+  border-right: 1px solid #dbdbdb;
+  height: 100%;
+  width: 220px;
+}
+
+.-cx-PRIVATE-SidebarLayout__content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.-cx-PRIVATE-SidebarLayout__content li {
+  list-style: none;
+}
+
+.-cx-PRIVATE-SidebarLayout__content .separator,
+.-cx-PRIVATE-SidebarLayout__content .subtitle {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__content {
+    margin: 0 px;
+    border: none;
+    width: 100%;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content ul {
+    /* once header is clicked, this is set to initial */
+    display: none;
+  }
+
+}
+
+.-cx-PRIVATE-SidebarLayout__root {
+  box-sizing: border-box;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    padding-bottom: 0px;
+    padding-top: 78px;
+    position: static;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__navWrapper,
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0 auto;
+  position: relative;
+  width: 992px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    box-sizing: border-box;
+    display: inline-block;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__nav {
+  float: left;
+  height: 100%;
+  padding-right: 0;
+  pointer-events: initial;
+  width: 256px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__nav {
+    float: none;
+    display: block;
+    margin: 0 !important;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 0 16px 20px 16px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    padding: 0 10px;
+  }
+}
+
+/*
+ * Page content styles
+ *
+ * These style the page content (markdown generated by `render_markdown`)
+ */
+
+.-cx-PRIVATE-SidebarLayout__pageContent {
+  color: #262626;
+  margin-left: 205px;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent > *:first-child {
+  margin-top: 0px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent a {
+  color: #003569;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h3 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li {
+  padding-left: 8px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li:not(:first-child) {
+  margin-top: 8px;
+}
+
+/* in pageContent, pre is generated on the backend */
+.-cx-PRIVATE-SidebarLayout__pageContent pre {
+  white-space: pre-wrap;
+}
+
+/*
+ * Navigation styles
+ */
+
+.-cx-PRIVATE-Navigation__header {
+  color: #999999;
+  font-size: 16px;
+  font-weight: initial;
+  margin: 0;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Navigation__header:first-child {
+    display: block;
+  }
+
+  .-cx-PRIVATE-Navigation__header:not(:first-child) {
+    display: none;
+  }
+
+  .-cx-PRIVATE-Navigation__header i {
+    float: left;
+    width: 22px;
+    height: 18px;
+    margin-right: 8px;
+    margin-left: 10px;
+    background: url("//instagramstatic-a.akamaihd.net/h1/images/glyphs/disclosure-down@2x.png/970bdcaa6ff1.png") no-repeat center;
+    background-size: 14px 14px;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content.active .-cx-PRIVATE-Navigation__header i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.-cx-PRIVATE-Navigation__navLink,
+.-cx-PRIVATE-Navigation__navLink:active,
+.-cx-PRIVATE-Navigation__navLink:visited,
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+  color: #262626;
+  font-size: 16px;
+  display: block;
+  padding: 16px 16px 16px 30px; /* 32px - 2px for the border-left */
+  width: 100%;
+}
+
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left-color: #dbdbdb;
+}
+
+.-cx-PRIVATE-Navigation__active .-cx-PRIVATE-Navigation__navLink {
+  border-left-color: #262626;
+  font-weight: 600;
+}
+
+/*
+ * Footer styles
+ */
+
+.-cx-PRIVATE-Footer__root {
+  font-size: 12px;
+  height: 77px;
+}
+
+.-cx-PRIVATE-Footer__copyright {
+  color: #262626;
+  display: inline-block;
+  float: right;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__nav {
+  display: inline-block;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Footer__copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-Footer__navItems {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.-cx-PRIVATE-Footer__navItems li {
+  display: inline-block;
+  list-style: none;
+}
+
+.-cx-PRIVATE-Footer__navItems li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.-cx-PRIVATE-Footer__navItems a,
+.-cx-PRIVATE-Footer__navItems a:visited,
+.-cx-PRIVATE-Footer__navItems a:hover,
+.-cx-PRIVATE-Footer__navItems a:active,
+.-cx-PRIVATE-Footer__navItems a:focus {
+  color: #003569;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1026px;
+  padding: 0px 20px;
+}
+
+/*
+ * Error styles
+ */
+
+.-cx-PRIVATE-ErrorPage__errorContainer {
+  text-align: center;
+}
+
+@media(max-width: 990px) {
+  .-cx-PRIVATE-ErrorPage__errorContainer {
+    padding: 100px 40px 0 40px;
+  }
+}
+
+.-cx-PRIVATE-ErrorPage__errorContainer a,
+.-cx-PRIVATE-ErrorPage__errorContainer a:visited {
+  color: #003569;
+}
+
+</style>
+    
+
+    
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/jquery.js/213ba890e802.js" type="text/javascript"></script>
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/bluebar.js/57733d51aed5.js" type="text/javascript"></script>
+
+
+    </head>
+    <body class=" p-error dialog-404">
+        
+    
+        <div class="root -cx-PRIVATE-Page__root">
+        
+            <div class="page -cx-PRIVATE-Page__body">
+                
+                    
+                        <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root">
+    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper">
+        <div class="logo -cx-PRIVATE-NavBar__logo"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
+            <div class="top-bar-right account-state" id="top_bar_right">
+                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions">
+                    
+                    
+                    <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn">
+                        <a href="/accounts/login/" class="loginLink">
+                            <i></i>
+                            <strong class="-cx-PRIVATE-NavBar__signInText">Log in</strong>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</header> <!-- .top-bar -->
+                    
+                
+
+                
+                <div class="main -cx-PRIVATE-Page__main">
+                    
+    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer">
+    
+
+    <h2>Sorry, this page isn&#39;t available.</h2>
+
+    <p>
+        The link you followed may be broken, or the page may have been removed.
+        <a href="/">Go back to Instagram.</a>
+    </p>
+
+
+
+    </div>
+
+                </div> <!-- .main -->
+                
+
+            </div> <!-- .page -->
+
+            
+            <footer class="page-footer -cx-PRIVATE-Footer__root" role="contentinfo">
+                <div class="wrapper -cx-PRIVATE-Footer__wrapper">
+                    <nav class="-cx-PRIVATE-Footer__nav">
+                        <ul class="-cx-PRIVATE-Footer__navItems">
+                            <li><a href="/about/us/">About us</a></li>
+                            <li><a href="http://help.instagram.com/">Support</a></li>
+                            <li><a href="http://blog.instagram.com/">Blog</a></li>
+                            <li><a href="http://instagram.com/press/">Press</a></li>
+                            <li><a href="/developer/">API</a></li>
+                            <li><a href="/about/jobs/">Jobs</a></li>
+                            <li><a href="/legal/privacy/">Privacy</a></li>
+                            <li><a href="/legal/terms/">Terms</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="copyright -cx-PRIVATE-Footer__copyright">&copy; 2016 Instagram</p>
+                </div>
+            </footer>
+            
+        
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+    
+    
+
+        
+    <script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-shim.min.js/6514c5e08593.js></script>
+<script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-sham.min.js/fc3c22cf2d67.js></script>
+<script type="text/javascript">window._sharedData = {"country_code":"CL","language_code":"en","gatekeepers":{"sulgin":true},"qs":"{\"shift\":10,\"header\":\"wqn33i1UIcpwWD3EiBqi7fTa5s8dITkf\",\"edges\":100,\"blob\":\"AQCcMSK4nhih0fyLn4AHlMFsTrBqIZCfOmmd40u2HfqSevdhiFfzQ2sdvZBti04hR5irv-bIDo3DZozt-1jU5f3SvVu10ZmNumEIwkqcjQMd_XirOwdTzPPYMVJsxIrJhMsEMqE3xGi8aysldfH_AbKaKiv_JdbmAFr3XypJGc0Ko77_eOxZQM3ZroOPvzwdLXuvjue8dq2Dm6sWQrFBxrgKjffC73xQRc_om4MhSgt-hA\",\"iterations\":7,\"size\":42}","show_app_install":true,"static_root":"\/\/instagramstatic-a.akamaihd.net\/h1","platform":"web","hostname":"api.instagram.com","entry_data":{},"qe":{"wo":{"p":{"design":"whiteout"},"g":"rollout_20160511"},"su_universe":{"p":{},"g":""},"su":{"p":{"enabled":"true"},"g":"test_20160322"},"discovery":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":360,"pixel_ratio":1.5},"config":{"viewer":null,"csrf_token":"NOTPROVIDED"},"environment_switcher_visible_server_guess":true};</script>
+
+        
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1425767024389221');
+
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+    
+    <script type="text/javascript">window._timings.domInteractive = Date.now()</script>
+
+    </body>
+</html>'):
+  app/controllers/api_controller.rb:35:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:45:00 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1838ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (757: unexpected token at '<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 not-logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 not-logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 not-logged-in "> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js not-logged-in "> <!--<![endif]-->
+    <head>
+        
+    <script type="text/javascript">window._timings = {"domLoading": Date.now()}</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+      
+        Instagram
+      
+    </title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+</script>
+<script src="//instagramstatic-a.akamaihd.net/h1/scripts/webfont.js/c0456c81549b.js" type="text/javascript" async></script>
+
+<style type="text/css">
+  /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.eot/115b1f7f9c04.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.woff/618250d25a4d.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.ttf/646346e03084.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-bold-webfont.svg/e55a9d6051e8.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.eot/1cbb869da891.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.woff/b1cf049474c9.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.ttf/3adb020ceae3.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-boldit-webfont.svg/29948a2d3c58.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.eot/12af77715cee.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.woff/a9a9773b8e29.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.ttf/99e19808976a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-reg-webfont.svg/c33d2fd56309.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.eot/1bbbd1312b0d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.woff/9e306befca91.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.ttf/4a8663684135.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-regit-webfont.svg/876278d4b189.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.eot/5016edf79e1d.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.woff/615c1b06d8fa.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.ttf/2973bd483f7a.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-sbold-webfont.svg/868597833e49.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+</style>
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.eot/63c84728610f.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.woff/66bbe029f180.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.ttf/eb408516399b.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/h1/webfonts/proximanova-light-webfont.svg/858f6a9b7ef3.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+</style>
+
+
+        
+    
+        <meta name="robots" content="noimageindex">
+        
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+        
+    
+    
+        <link rel="Shortcut Icon" type="image/x-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.ico/dfa85bb1fd63.ico"><link rel="mask-icon" href="//instagramstatic-a.akamaihd.net/h1/images/ico/favicon.svg/9d8680ab8a3c.svg" color="#262626">
+    
+    
+        <link rel="apple-touch-icon-precomposed" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-72x72-precomposed.png/6f32d3921f7d.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-114x114-precomposed.png/4de54977595e.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//instagramstatic-a.akamaihd.net/h1/images/ico/apple-touch-icon-144x144-precomposed.png/73425f8103e6.png">
+    
+    
+    
+        <style type="text/css">/* @generated */
+/* DO NOT CHANGE THIS FILE. INSTEAD, MODIFY 'distillery/templates/main.css' */
+/* css shared between /about and /developer */
+/* run `build/scripts/css_transform_distillery.sh` if you change this file */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fafafa;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * TODO: The DOM has some extra intermediary wrapper elements. We can remove
+ * some of these once we eliminate the old styles, and simplify our css.
+ */
+.-cx-PRIVATE-Page__root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.-cx-PRIVATE-Page__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.-cx-PRIVATE-Page__main {
+  /**
+   * HACK: Really we just want our child's height to be 100%, but there seems to
+   * be a flexbox bug in Chrome (it seems to work fine in Firefox), so we have
+   * to instead use a nested `display: flex` to force it to the right height.
+   */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-top: 137px;
+  position: relative;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Page__main {
+    display: block;  /* Not needed on mobile and causes strange Safari bug */
+    margin-top: 0;
+  }
+}
+
+/*
+ * Navbar styles
+ */
+
+.-cx-PRIVATE-NavBar__root {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  height: 77px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.-cx-PRIVATE-NavBar__profilePic {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__username {
+  color: #003569;
+  display: inline !important;
+  float: right;
+  font-weight: 400;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signIn {
+  display: inline-block;
+  float: right;
+  margin-right: 2px;
+  margin-top: 12px;
+}
+
+.-cx-PRIVATE-NavBar__signInText {
+  color: #003569;
+  font-weight: 400;
+}
+
+.-cx-PRIVATE-NavBar__logo {
+  background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup.png/06e4519d6d03.png');
+  background-size: 100%;
+  height: 35px;
+  left: 16px;
+  position: absolute;
+  text-indent: -9999em;
+  top: 6px;
+  width: 176px;
+}
+
+.-cx-PRIVATE-NavBar__logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 1.5dppx) {
+  .-cx-PRIVATE-NavBar__logo {
+    background-image: url('//instagramstatic-a.akamaihd.net/h1/images/branding/logoWhiteoutLockup@2x.png/2c2208b30c42.png');
+  }
+}
+
+/**
+ * bluebar_legacy has a logoGroup wrapper, bluebar_new doesn't. This code fixes
+ * things for _legacy.
+ */
+.-cx-PRIVATE-NavBar__logoGroup {
+  left: 16px;
+  position: absolute;
+  top: 6px;
+}
+
+.-cx-PRIVATE-NavBar__logoGroup .-cx-PRIVATE-NavBar__logo {
+  position: static;
+}
+
+.-cx-PRIVATE-NavBar__wrapper {
+  margin: 0 auto;
+  max-width: 1026px;
+  padding: 0px 16px;
+  position: relative;
+}
+
+.-cx-PRIVATE-NavBar__topBarActions {
+  list-style: none;
+}
+
+.-cx-PRIVATE-NavBar__topBarLeft {
+  display: none;
+}
+
+.-cx-PRIVATE-NavBar__dropdown {
+  display: none;
+}
+
+/*
+ * Sidebar styles
+ */
+
+.-cx-PRIVATE-SidebarLayout__content {
+  border-right: 1px solid #dbdbdb;
+  height: 100%;
+  width: 220px;
+}
+
+.-cx-PRIVATE-SidebarLayout__content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.-cx-PRIVATE-SidebarLayout__content li {
+  list-style: none;
+}
+
+.-cx-PRIVATE-SidebarLayout__content .separator,
+.-cx-PRIVATE-SidebarLayout__content .subtitle {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__content {
+    margin: 0 px;
+    border: none;
+    width: 100%;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content ul {
+    /* once header is clicked, this is set to initial */
+    display: none;
+  }
+
+}
+
+.-cx-PRIVATE-SidebarLayout__root {
+  box-sizing: border-box;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__root {
+    padding-bottom: 0px;
+    padding-top: 78px;
+    position: static;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__navWrapper,
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0 auto;
+  position: relative;
+  width: 992px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__navWrapper {
+    box-sizing: border-box;
+    display: inline-block;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__nav {
+  float: left;
+  height: 100%;
+  padding-right: 0;
+  pointer-events: initial;
+  width: 256px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__nav {
+    float: none;
+    display: block;
+    margin: 0 !important;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__contentWrapper {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  padding: 0 16px 20px 16px;
+}
+
+@media screen and (min-width: 991px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent .-cx-PRIVATE-SidebarLayout__contentWrapper {
+    padding: 0 10px;
+  }
+}
+
+/*
+ * Page content styles
+ *
+ * These style the page content (markdown generated by `render_markdown`)
+ */
+
+.-cx-PRIVATE-SidebarLayout__pageContent {
+  color: #262626;
+  margin-left: 205px;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-SidebarLayout__pageContent {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 0;
+  }
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent > *:first-child {
+  margin-top: 0px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent a {
+  color: #003569;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent h3 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li {
+  padding-left: 8px;
+}
+
+.-cx-PRIVATE-SidebarLayout__pageContent li:not(:first-child) {
+  margin-top: 8px;
+}
+
+/* in pageContent, pre is generated on the backend */
+.-cx-PRIVATE-SidebarLayout__pageContent pre {
+  white-space: pre-wrap;
+}
+
+/*
+ * Navigation styles
+ */
+
+.-cx-PRIVATE-Navigation__header {
+  color: #999999;
+  font-size: 16px;
+  font-weight: initial;
+  margin: 0;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Navigation__header:first-child {
+    display: block;
+  }
+
+  .-cx-PRIVATE-Navigation__header:not(:first-child) {
+    display: none;
+  }
+
+  .-cx-PRIVATE-Navigation__header i {
+    float: left;
+    width: 22px;
+    height: 18px;
+    margin-right: 8px;
+    margin-left: 10px;
+    background: url("//instagramstatic-a.akamaihd.net/h1/images/glyphs/disclosure-down@2x.png/970bdcaa6ff1.png") no-repeat center;
+    background-size: 14px 14px;
+  }
+
+  .-cx-PRIVATE-SidebarLayout__content.active .-cx-PRIVATE-Navigation__header i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.-cx-PRIVATE-Navigation__navLink,
+.-cx-PRIVATE-Navigation__navLink:active,
+.-cx-PRIVATE-Navigation__navLink:visited,
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+  color: #262626;
+  font-size: 16px;
+  display: block;
+  padding: 16px 16px 16px 30px; /* 32px - 2px for the border-left */
+  width: 100%;
+}
+
+.-cx-PRIVATE-Navigation__navLink:hover {
+  border-left-color: #dbdbdb;
+}
+
+.-cx-PRIVATE-Navigation__active .-cx-PRIVATE-Navigation__navLink {
+  border-left-color: #262626;
+  font-weight: 600;
+}
+
+/*
+ * Footer styles
+ */
+
+.-cx-PRIVATE-Footer__root {
+  font-size: 12px;
+  height: 77px;
+}
+
+.-cx-PRIVATE-Footer__copyright {
+  color: #262626;
+  display: inline-block;
+  float: right;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__nav {
+  display: inline-block;
+}
+
+@media screen and (max-width: 990px) {
+  .-cx-PRIVATE-Footer__copyright {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.-cx-PRIVATE-Footer__navItems {
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.-cx-PRIVATE-Footer__navItems li {
+  display: inline-block;
+  list-style: none;
+}
+
+.-cx-PRIVATE-Footer__navItems li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.-cx-PRIVATE-Footer__navItems a,
+.-cx-PRIVATE-Footer__navItems a:visited,
+.-cx-PRIVATE-Footer__navItems a:hover,
+.-cx-PRIVATE-Footer__navItems a:active,
+.-cx-PRIVATE-Footer__navItems a:focus {
+  color: #003569;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.-cx-PRIVATE-Footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1026px;
+  padding: 0px 20px;
+}
+
+/*
+ * Error styles
+ */
+
+.-cx-PRIVATE-ErrorPage__errorContainer {
+  text-align: center;
+}
+
+@media(max-width: 990px) {
+  .-cx-PRIVATE-ErrorPage__errorContainer {
+    padding: 100px 40px 0 40px;
+  }
+}
+
+.-cx-PRIVATE-ErrorPage__errorContainer a,
+.-cx-PRIVATE-ErrorPage__errorContainer a:visited {
+  color: #003569;
+}
+
+</style>
+    
+
+    
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/jquery.js/213ba890e802.js" type="text/javascript"></script>
+    <script src="//instagramstatic-a.akamaihd.net/h1/scripts/bluebar.js/57733d51aed5.js" type="text/javascript"></script>
+
+
+    </head>
+    <body class=" p-error dialog-404">
+        
+    
+        <div class="root -cx-PRIVATE-Page__root">
+        
+            <div class="page -cx-PRIVATE-Page__body">
+                
+                    
+                        <header class="top-bar top-bar-new -cx-PRIVATE-NavBar__root">
+    <div class="top-bar-wrapper -cx-PRIVATE-NavBar__wrapper">
+        <div class="logo -cx-PRIVATE-NavBar__logo"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left -cx-PRIVATE-NavBar__topBarLeft">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
+            <div class="top-bar-right account-state" id="top_bar_right">
+                <ul class="top-bar-actions -cx-PRIVATE-NavBar__topBarActions">
+                    
+                    
+                    <li id="link_profile" class="link-signin -cx-PRIVATE-NavBar__signIn">
+                        <a href="/accounts/login/" class="loginLink">
+                            <i></i>
+                            <strong class="-cx-PRIVATE-NavBar__signInText">Log in</strong>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</header> <!-- .top-bar -->
+                    
+                
+
+                
+                <div class="main -cx-PRIVATE-Page__main">
+                    
+    <div class="error-container -cx-PRIVATE-ErrorPage__errorContainer">
+    
+
+    <h2>Sorry, this page isn&#39;t available.</h2>
+
+    <p>
+        The link you followed may be broken, or the page may have been removed.
+        <a href="/">Go back to Instagram.</a>
+    </p>
+
+
+
+    </div>
+
+                </div> <!-- .main -->
+                
+
+            </div> <!-- .page -->
+
+            
+            <footer class="page-footer -cx-PRIVATE-Footer__root" role="contentinfo">
+                <div class="wrapper -cx-PRIVATE-Footer__wrapper">
+                    <nav class="-cx-PRIVATE-Footer__nav">
+                        <ul class="-cx-PRIVATE-Footer__navItems">
+                            <li><a href="/about/us/">About us</a></li>
+                            <li><a href="http://help.instagram.com/">Support</a></li>
+                            <li><a href="http://blog.instagram.com/">Blog</a></li>
+                            <li><a href="http://instagram.com/press/">Press</a></li>
+                            <li><a href="/developer/">API</a></li>
+                            <li><a href="/about/jobs/">Jobs</a></li>
+                            <li><a href="/legal/privacy/">Privacy</a></li>
+                            <li><a href="/legal/terms/">Terms</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="copyright -cx-PRIVATE-Footer__copyright">&copy; 2016 Instagram</p>
+                </div>
+            </footer>
+            
+        
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+    
+    
+
+        
+    <script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-shim.min.js/6514c5e08593.js></script>
+<script src=//instagramstatic-a.akamaihd.net/h1/scripts/polyfills/es5-sham.min.js/fc3c22cf2d67.js></script>
+<script type="text/javascript">window._sharedData = {"country_code":"CL","language_code":"en","gatekeepers":{"sulgin":true},"qs":"{\"shift\":10,\"header\":\"3KwVJp3W84xNrQ6waAawu3hXPpVxZEH0\",\"edges\":100,\"blob\":\"AQCWUFOU4MEzM6CYGkiVWuZehtbt9htM-kog2pNRsPBE4Jjnn5tzUmDy5w5kGnTF2Sntgiktrp9EKgK3Q-t5SxkhOSExrF2N9_i0LJEmxS1o9pm8MQ8-Ypkqi-emA5fBcZ1LyF2tC7mb8R1loA_NfLeXmq1K19yeVrac8SPYIAPgezw2_nF87W4gloJ0n3OqTkT-WZ3fYC6aY2LYDKiXf9JqtzehllaH2BTS_NxciPQubQ\",\"iterations\":7,\"size\":42}","show_app_install":true,"static_root":"\/\/instagramstatic-a.akamaihd.net\/h1","platform":"web","hostname":"api.instagram.com","entry_data":{},"qe":{"wo":{"p":{"design":"whiteout"},"g":"rollout_20160511"},"su_universe":{"p":{},"g":""},"su":{"p":{"enabled":"true"},"g":"test_20160322"},"discovery":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":360,"pixel_ratio":1.5},"config":{"viewer":null,"csrf_token":"NOTPROVIDED"},"environment_switcher_visible_server_guess":true};</script>
+
+        
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1425767024389221');
+
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+    
+    <script type="text/javascript">window._timings.domInteractive = Date.now()</script>
+
+    </body>
+</html>'):
+  app/controllers/api_controller.rb:35:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (197.1ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:47:35 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 684ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:48:09 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1940ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:48:11 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:48:11 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 696ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:49:39 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): https://api.instagram.com/v1/tags/@^?access_token=2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402):
+  app/helpers/application_helper.rb:354:in `httpGetRequest'
+  app/controllers/api_controller.rb:34:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.8ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:49:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 711ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:53:24 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): https://api.instagram.com/v1/tags/@^?access_token=2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402):
+  app/helpers/application_helper.rb:354:in `httpGetRequest'
+  app/controllers/api_controller.rb:34:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.7ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:53:32 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 697ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:53:38 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): https://api.instagram.com/v1/tags/@^?access_token=2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402):
+  app/helpers/application_helper.rb:354:in `httpGetRequest'
+  app/controllers/api_controller.rb:34:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (69.1ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:56:22 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:56:41 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:56:43 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:56:48 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:59:30 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 632ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:59:30 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 672ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:59:31 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:59:31 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 12:59:58 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"?", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"?", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 735ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:00:49 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"12312545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"12312545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1129ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:01:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"1231@?2545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"1231@?2545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 649ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:01:30 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "tag": "1231@?2545,
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{
+  "tag": "1231@?2545,
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}'):
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:04:06 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"caca"=>"1231@?2545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"caca"=>"1231@?2545", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:08:52 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 753ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:08:53 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:08:53 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:08:53 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 531ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:08:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:09:36 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1592ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:12 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:12 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 684ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 552ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:39 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1077ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2115ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:11:42 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 773ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:12:57 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:13:04 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "tag": "snowy",
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402",
+  
+}
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{
+  "tag": "snowy",
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402",
+  
+}'):
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:13:17 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:13:44 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:14:22 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:14:43 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "dsa"=>"sdas"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:14:48 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1290ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 714ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 529ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:15:09 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:18 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:18 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 603ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:18 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:19 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:19 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 667ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:27:19 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:36:42 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1235ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:38:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1111ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:55 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 713ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 552ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:42:56 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1151ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:30 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:30 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1140ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:31 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 720ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:32 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:32 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 591ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:33 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:48:33 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:14 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1109ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:15 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 610ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 663ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 13:58:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:04:33 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1114ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:05:21 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1452ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:10:26 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1143ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/dfs, application/dfs with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/benjamin/tareaintegracionbags/app/views"
+):
+  app/controllers/api_controller.rb:74:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (57.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.2ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:10:57 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1110ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template api/dfs, application/dfs with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/benjamin/tareaintegracionbags/app/views"
+):
+  app/controllers/api_controller.rb:74:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (52.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:14:06 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1129ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:27:08 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1107ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:28:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1099ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:29:16 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1151ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:30:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 6129ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:31:36 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1178ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 14:32:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1140ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:05:35 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1084ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:05:57 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1114ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:06:28 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1119ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:09:54 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1124ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:10:38 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1074ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 16:13:13 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1067ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 19:16:57 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1773ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 19:26:35 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:00:32 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `iniciar' for #<ApiController:0x005564c04e6248>):
+  app/controllers/api_controller.rb:11:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (71.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:01:06 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:01:11 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:03:46 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:05:44 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `auxiliar' for #<ApiController:0x005564bff00108>):
+  app/controllers/api_controller.rb:28:in `instagramTag'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.5ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.3ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.9ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:07:07 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1400ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:38 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1117ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:39 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:40 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 533ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:41 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:43 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 686ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:13:44 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:14:06 -0300
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1107ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 21:14:12 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "tag": "34213418457d2edw21jsjc018487xnzm873731cmc"
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{
+  "tag": "34213418457d2edw21jsjc018487xnzm873731cmc"
+   "access_token": "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+}'):
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.2ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.0ms)
+  Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.4ms)
