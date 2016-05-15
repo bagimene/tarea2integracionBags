@@ -2,7 +2,7 @@ module ApplicationHelper
 
 	def rutaPost
 		return "https://tareaintegracionbags.herokuapp.com/instagram/tag/buscar"
-		#return "http://localhost:3000/instagram/tag/buscar"
+	    #return "http://localhost:3000/instagram/tag/buscar"
 	end
 	def access_token
 		return "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
@@ -20,7 +20,8 @@ module ApplicationHelper
         http.use_ssl = true
 
       
-		response = http.post(uri.path, params.to_json, headers)	 
+		response = http.post(uri.path, params.to_json, headers)	
+		data = response.body 
 	end
 
 	def valid_json?(json)
