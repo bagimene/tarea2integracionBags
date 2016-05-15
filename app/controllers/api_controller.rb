@@ -6,7 +6,7 @@ class ApiController < ApplicationController
 
   ## Endpoint de /instagram/tag/buscar
   def instagramTag
-    #instagramTagMethod
+    
     require 'json'
     iniciar({:total => 0}, Array.new, "")
     begin  

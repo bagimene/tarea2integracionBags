@@ -96,7 +96,7 @@ class ApiControllerTest < ActionController::TestCase
     	assert 1 == respuestaJson["metadata"].count, "metadata debería tener solo un elemento"
     	#faltaría ver lo que está dentro de cada post, pero aquí no hay. Es para hacerlo en otro test sólo viendo el formato de un post existente
     	assert 0 == respuestaJson["posts"].count, "cantidad de posts mal obtenida"
-    	assert "" == respuestaJson["version"], "versión mal actualizada"
+    	assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
 
     else 
     	return
@@ -120,6 +120,7 @@ class ApiControllerTest < ActionController::TestCase
   #############################
   test "validar instagramTagMethod" do
 	require 'json'
+	iniciar({:total => 0}, Array.new, "")
 	data = instagramTagMethod("snowy", access_token)	
 	#debería devolver 1 porque está bueno
 	assert data == 1
@@ -131,4 +132,15 @@ class ApiControllerTest < ActionController::TestCase
 	assert data == 0
   end
 
+  #############################
+  ##TEST PARA VERSIÓN DEL COMMIT GIT:
+  #############################
+  test "validar versión master" do	
+	url = rutaPost    
+  	params = {"tag"=> "snowy","access_token"=> access_token}
+	data =  httpPostRequest(url , nil, params)
+    consultaTags = JSON.parse(data)
+    #versionNueva = versionCommit + 1
+    assert consultaTags["version"] == versionCommit.to_s, "versión mal actualizada"
+  end
 end

@@ -122,7 +122,8 @@ module ApplicationHelper
 	      posts.push(cadaPost)  
    	    end    
 
-	    version = ""    
+	    versionNumero = versionCommit    
+	    version = versionNumero.to_s
 	    #render :json => {:metadata => metadata, :posts => posts, :version => version} 
 	    metadataPush(metadata)
 	    postsPush(posts)
@@ -146,6 +147,20 @@ module ApplicationHelper
         @versionGlobal = version_
     end
 
-
+    def versionCommit
+	    
+    	#response = Github::Client::Repos.branches 'bagimene', 'master'
+		#require 'rest-client'
+		#branch = github(:get, "tareaintegracionbags", "refs/heads/master")
+	    #require 'octokit'
+	    #user = Octokit.user 'bagimene'
+	    url = "https://api.github.com/repos/bagimene/tareaintegracionbags/commits"
+		data =  httpGetRequest(url , nil)
+		consultaCommits = JSON.parse(data)
+		ultimoCommit = consultaCommits[0]["commit"]["message"]
+		ultimoCaracter = ultimoCommit[-1,1]
+		ultimaVersion = ultimoCaracter.to_i
+        return ultimaVersion
+    end
 
 end

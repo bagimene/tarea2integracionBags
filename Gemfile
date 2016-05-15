@@ -29,6 +29,14 @@ gem 'rack-test'
 
 gem 'coveralls', require: false  #gem 'coveralls', '~> 0.8.13'
 
+gem 'mash', '~> 0.1.1'
+
+gem 'ruby-github'
+
+gem "octokit", "~> 4.0"
+
+gem 'github_api', '~> 0.13.1'
+
 #gem 'rspec', '>= 3.2'
 
 group :production do
