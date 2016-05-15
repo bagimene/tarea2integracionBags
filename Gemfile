@@ -37,6 +37,8 @@ gem "octokit", "~> 4.0"
 
 gem 'github_api', '~> 0.13.1'
 
+gem 'rails_12factor'
+
 #gem 'rspec', '>= 3.2'
 
 group :production do
