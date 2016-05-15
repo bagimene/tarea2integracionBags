@@ -13,7 +13,7 @@ class ApiController < ApplicationController
 
       tag = params[:tag]
       token = params[:access_token]
-      if tag.nil? || token.nil? || tag == "" || token == "" || params.count != 5
+      if tag.nil? || token.nil? || tag == "" || token == "" || params.count != 4 #sería 5 si fuera con header, pero no
         render :json => {:meta => "error en parámetros"}, :status => 400
         #render :json => {:error => "error 400 por parámetros malos"}  
         return

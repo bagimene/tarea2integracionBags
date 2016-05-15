@@ -1,7 +1,13 @@
 language: ruby
 rvm:
-  - 2.2
-
-
+- 2.2
 script:
-  - bundle exec rake test test/models/api_controller_test.rb
+- bundle exec rake test test/models/api_controller_test.rb
+deploy:
+  provider: heroku
+  api_key:
+    secure: gyff/5+mAKvzQ0+hz9VxUJ/KmOXb6eXBE709f3D0zojzi1NwaGl+AZvLotYq9axOqIIRJt835QSjQnkJO5eUjydk9sHwa1IPC10ZBtGyYBBt8dHd0F0n2egg6fYkzNY41nCQmrFZ4R4VTHiLRo7EKvACtnBTDIWZW/ndkq1rwlJawK82GmYMqbBe0O9TPWq5KQvJxyICuZszDqy5mNk5L4VlywnRNZUa4BS1UoKmDwv/AW2mQAuTbT9q/WYV4pvftnuheFVfcWWsdwxsO2Co63JnlrIiWrpDrRJJ4Us1NX7LwOHKTvinKpsDBDXMbMWkzKNNsBg/Xn3OgKNj8IFkPbNwwxGmGwYASY+SEJGtQ0teZdW19dX6S7n9q8dJ2jb9LLLdDA8/X9Peit1kN8eTfJVAkc9eoe4yk7ltqxlYbDlGX6Sb2WBVqlpUAMnubqIJR2l1OwAprLqRHvWjjPbkZpJwwCJgUnvcDHOLtatqQuQ50XHNcEXuZib+FB1PjQMYFC4bWl/W4/2Y3I+hHZ+PRfEI374aMwOVOkxFjG73VEbbNMqNi7zyc4dusw2CGCtN/l4slwOdgTSE0zDjv0vrFjnEXQ/u+jBe8rvhd/CIznaIGj+J9em59wXYxYa/fcUsm6JMcscfxiJXEC6gX3LnPNaKCJnQLhE09VhvT3EjqMw=
+  app: 
+    master: tareaintegracionbags
+  on:
+    repo: bagimene/tareaintegracionbags

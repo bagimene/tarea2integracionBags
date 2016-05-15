@@ -88,16 +88,20 @@ class ApiControllerTest < ActionController::TestCase
     assert valid_json?(data), "json no válido"
     if valid_json?(data) 
     	respuestaJson = JSON.parse(data)
-    	assert respuestaJson.count == 3, "no tiene la cantidad de elementos requeridos"
-    	#respuestaJson.each do |elemento|
-    	#	if elemento 
-    	#end    	
-    	assert 0 == respuestaJson["metadata"]["total"], "cantidad total mal obtenida"
-    	assert 1 == respuestaJson["metadata"].count, "metadata debería tener solo un elemento"
-    	#faltaría ver lo que está dentro de cada post, pero aquí no hay. Es para hacerlo en otro test sólo viendo el formato de un post existente
-    	assert 0 == respuestaJson["posts"].count, "cantidad de posts mal obtenida"
-    	assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
-
+    	if tokenDesactualizado(respuestaJson) == true
+    		assert tokenDesactualizado(respuestaJson) == true
+    	else 
+    		assert tokenDesactualizado(respuestaJson) == false
+    		assert respuestaJson.count == 3, "no tiene la cantidad de elementos requeridos"
+	    	#respuestaJson.each do |elemento|
+	    	#	if elemento 
+	    	#end    	
+	    	assert 0 == respuestaJson["metadata"]["total"], "cantidad total mal obtenida"
+	    	assert 1 == respuestaJson["metadata"].count, "metadata debería tener solo un elemento"
+	    	#faltaría ver lo que está dentro de cada post, pero aquí no hay. Es para hacerlo en otro test sólo viendo el formato de un post existente
+	    	assert 0 == respuestaJson["posts"].count, "cantidad de posts mal obtenida"
+	    	assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
+    	end
     else 
     	return
     end
@@ -121,26 +125,33 @@ class ApiControllerTest < ActionController::TestCase
   test "validar instagramTagMethod" do
 	require 'json'
 	iniciar({:total => 0}, Array.new, "")
-	data = instagramTagMethod("snowy", access_token)	
-	#debería devolver 1 porque está bueno
-	assert data == 1
-	data = instagramTagMethod("", access_token)	
-	#debería devolver 0 porque está malo
-	assert data == 0
-	data = instagramTagMethod("snowy", "3421342")	
-	#debería devolver 0 porque está malo el token
-	assert data == 0
+
+	data = instagramTagMethod("snowy", access_token)
+	if getDaError(data) == false
+
+    	assert getDaError(data) == false, "1"
+    		
+		#debería devolver 1 porque está bueno
+		assert data == 1, "2"
+		data = instagramTagMethod("", access_token)	
+		#debería devolver 0 porque está malo
+		assert data == 0, "3"
+		data = instagramTagMethod("snowy", "3421342")	
+		#debería devolver 0 porque está malo el token
+		assert data == 0, "4"
+		assert getDaError(data) == true, "5"
+    else 
+    	assert getDaError(data) == true, "6"
+    end	
   end
 
   #############################
   ##TEST PARA VERSIÓN DEL COMMIT GIT:
   #############################
   test "validar versión master" do	
-	url = rutaPost    
-  	params = {"tag"=> "snowy","access_token"=> access_token}
-	data =  httpPostRequest(url , nil, params)
-    consultaTags = JSON.parse(data)
-    #versionNueva = versionCommit + 1
-    assert consultaTags["version"] == versionCommit.to_s, "versión mal actualizada"
+    assert_not -1 == versionCommit, "versión no está en número"
+    assert -1 == convertirStringInt("versiónSinNúmero"), "no se puede parsear a int"
+    assert 1 == convertirStringInt("versiónConNúmero1"), "error al convertir"
+    assert 437 == convertirStringInt("versiónConNúmero437"), "error al convertir más de un dígito"
   end
 end
