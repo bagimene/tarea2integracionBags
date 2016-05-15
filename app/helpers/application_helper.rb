@@ -157,11 +157,15 @@ module ApplicationHelper
 		consultaCommits = JSON.parse(data)
 
 		####COMPROBAR QUE NO SEA NIL ANTES DE LLAMAR LOS []
-		if consultaCommits.nil?
-			return -11
-		else
-			ultimoCommit = consultaCommits[0]["commit"]["message"]
-		end
+		begin 
+			#if consultaCommits.nil?
+			#	return -11
+			#else
+				ultimoCommit = consultaCommits[0]["commit"]["message"]
+			#end
+		rescue => e  
+	      		return -11
+	    end
 		#ultimoCaracter = ultimoCommit[-1,1]
 
 		ultimaVersion = convertirStringInt(ultimoCommit)#ultimoCaracter)
