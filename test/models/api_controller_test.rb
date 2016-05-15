@@ -108,7 +108,7 @@ class ApiControllerTest < ActionController::TestCase
 	    	assert 0 == respuestaJson["posts"].count, "cantidad de posts mal obtenida"
 	    	if versionCommit != -11
 	    	  assert versionCommit.to_s == respuestaJson["version"], "versión mal actualizada"
-	    	end
+ 	    	end
     	end
     else 
     	return
@@ -159,10 +159,10 @@ class ApiControllerTest < ActionController::TestCase
   test "validar versión master" do	
   	if versionCommit != -11
 	    assert_not -1 == versionCommit, "versión no está en número"
-	    assert -1 == convertirStringInt("versiónSinNúmero"), "no se puede parsear a int"
-	    assert 1 == convertirStringInt("versiónConNúmero1"), "error al convertir"
-	    assert 437 == convertirStringInt("versiónConNúmero437"), "error al convertir más de un dígito"
 	end
+	assert -1 == convertirStringInt("versiónSinNúmero"), "no se puede parsear a int"
+	assert 1 == convertirStringInt("versiónConNúmero1"), "error al convertir"
+	assert 437 == convertirStringInt("versiónConNúmero437"), "error al convertir más de un dígito"
   end
 
   #############################
