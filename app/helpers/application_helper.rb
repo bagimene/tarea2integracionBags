@@ -13,21 +13,14 @@ module ApplicationHelper
 		require 'uri'
 		if authHeader.nil?
 			headers = {'Content-Type' => 'application/json'}
-		else
-			headers = {'Authorization' => authHeader , 'Content-Type' => 'application/json'}
 		end	
 
         uri = URI.parse(url)
         http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
 
-        if params.nil?
-		response = http.post(uri.path,'{}', headers)
-		else
+      
 		response = http.post(uri.path, params.to_json, headers)	 
-		end	
-
-    	data = response.body
-
 	end
 
 	def valid_json?(json)
@@ -45,8 +38,6 @@ module ApplicationHelper
 		
 		if authHeader.nil?
 			headers = {'Content-Type' => 'application/json'}
-		else
-			headers = {'Authorization' => authHeader , 'Content-Type' => 'application/json'}
 		end	
         uri = URI.parse(url)    
         #request = Net::HTTP::Get.new(uri, headers) #{'' => ''})
@@ -61,12 +52,8 @@ module ApplicationHelper
        	 	#response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(request) } 
        	
        	rescue Errno::ETIMEDOUT  
-       	 	puts "--- Time out de la conexion" 
         	
     	end  
-    	if response.nil?
-    		return nil
-    	end	
   
 
     	return data = response.body
