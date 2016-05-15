@@ -9069,3 +9069,115 @@ ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{
   Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.0ms)
   Rendered /home/benjamin/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:55:17 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2084ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:56:54 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1878ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:56:57 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2006ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:57:02 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:57:02 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:57:02 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:57:02 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 529ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:57:03 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 708ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:40 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 2044ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:43 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"snowy", "extra"=>"de más", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:43 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"snowy", "access_token"=>"24342342", "api"=>{"tag"=>"snowy", "access_token"=>"24342342"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 535ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:43 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"34213418457d2edw21jsjc018487xnzm873731cmc", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 200 OK in 1882ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:49 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "api"=>{"tag"=>""}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:50 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>".", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 920ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:51 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"@^", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-14 23:59:51 -0400
+Processing by ApiController#instagramTag as */*
+  Parameters: {"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
