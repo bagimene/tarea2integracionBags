@@ -6,8 +6,9 @@ class ApiController < ApplicationController
 
   ## Endpoint de /instagram/tag/buscar
   def instagramTag
+    #instagramTagMethod
     require 'json'
-
+    iniciar({:total => 0}, Array.new, "")
     begin  
 
       tag = params[:tag]
@@ -20,57 +21,15 @@ class ApiController < ApplicationController
 
     rescue Exception => e  
       render :json => {:meta => "error en parámetros"}, :status => 400
+      #Haml::Engine.new(File.read(File.join(Rails.root, 'app/views/xxxx','_form.html.haml'))).render(Object.new, :hello => "Hello World")
       return
-    end  
-   
-    url = "https://api.instagram.com/v1/tags/" + tag.to_s + "?access_token="  + token.to_s
-    
-    begin
-    #url = "https://api.instagram.com/v1/tags/search?q=" + tag.to_s + "&access_token="  + token.to_s
-      data =  httpGetRequest(url , nil )    
-      consultaTags = JSON.parse(data)
-    rescue => e  #probablemente si devuelve un html por error 404
-      #e.response
-      render :json => {:meta => "error en parámetros"}, :status => 400
-      return
-    end
+    end   
 
-    if consultaTags.count == 1 #esto pasa si da error, solo tiene "meta" pero no "data"
-      render :json => {:meta => "error en parámetros"}, :status => 400
-      return
-    end
-
-    #totalTags = consultaTags["data"].count   #si se quiere el verdadero total, arriba se saca
-    #metadata = [:total => totalTags] 
-    totalTags = consultaTags["data"]["media_count"]
-    metadata = {:total => totalTags}
-
-    url = "https://api.instagram.com/v1/tags/" + tag.to_s + "/media/recent?access_token="  + token.to_s
-    data =  httpGetRequest(url , nil )
-    consultaTags = JSON.parse(data)
-
-    posts = Array.new 
-
-    consultaTags["data"].each do |cadaTag|
-      tagsAsociados = Array.new 
-      cadaTag["tags"].each do |asociados|
-        tagsAsociados.push(asociados)
-      end      
-      username = cadaTag["user"]["username"]
-      likes = cadaTag["likes"]["count"]
-      url = cadaTag["images"]["standard_resolution"]["url"]  #tiene que ser la mejor resolución
-      if url.nil?
-        url = cadaTag["images"]["thumbnail"]["url"]
-        if url.nil?
-          url = cadaTag["images"]["low_resolution"]["url"]
-        end
-      end
-      caption = cadaTag["caption"]["text"]
-      cadaPost = {:tags => tagsAsociados,:username => username, :likes => likes, :url => url, :caption => caption}
-      posts.push(cadaPost)  
-    end    
-
-    version = ""    
-    render :json => {:metadata => metadata, :posts => posts, :version => version}  
+     valor = instagramTagMethod(tag.to_s,token.to_s)
+     if valor == 0
+        render :json => {:meta => "error en parámetros"}, :status => 400
+     elsif valor == 1
+        render :json => {:metadata => @metadataGlobal, :posts => @postsGlobal, :version => @versionGlobal} 
+     end
   end
 end

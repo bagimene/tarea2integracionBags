@@ -106,8 +106,29 @@ class ApiControllerTest < ActionController::TestCase
 
 
   #############################
-  ##TEST PARA ... :
+  ##TEST PARA MÉTODO httpGetRequest:
   #############################
+  test "validar httpGetRequest" do
+	require 'json'
+	url = "https://api.instagram.com/v1/tags/snowy?access_token=" + access_token
+	data =  httpGetRequest(url , nil)
+	assert valid_json?(data), "json no válido"
+  end
 
+  #############################
+  ##TEST PARA MÉTODO instagramTagMethod:
+  #############################
+  test "validar instagramTagMethod" do
+	require 'json'
+	data = instagramTagMethod("snowy", access_token)	
+	#debería devolver 1 porque está bueno
+	assert data == 1
+	data = instagramTagMethod("", access_token)	
+	#debería devolver 0 porque está malo
+	assert data == 0
+	data = instagramTagMethod("snowy", "3421342")	
+	#debería devolver 0 porque está malo el token
+	assert data == 0
+  end
 
 end
